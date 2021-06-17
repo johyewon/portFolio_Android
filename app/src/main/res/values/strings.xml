@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HANIX</string>
+
+
+    <string name="default_notification_channel_id">HANIX</string>
+    <string name="default_notification_channel_name">HANIX</string>
+
+    <!-- 페이스북 -->
+    <string name="facebook_app_id" translatable="false">471863150861290</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb471863150861290</string>
+
+    <string name="firebase_profile_path">hanix</string>
+    <string name="require_permission">HANIX 는 해당 권한을 필요로 해요.</string>
+    <string name="go_change_setting"><![CDATA[[설정] > [애플리케이션] > [HANIX] 에서 권한을 허용할 수 있어요]]></string>
+
+    <string name="msg_info">안내</string>
+    <string name="msg_desc">알림</string>
+    <string name="msg_copy">복사</string>
+    <string name="msg_move">이동</string>
+    <string name="msg_execute">실행</string>
+    <string name="msg_ok">확인</string>
+    <string name="msg_cancel">취소</string>
+    <string name="msg_security_warning">보안경고!</string>
+    <string name="msg_go_app_launch">바로가기</string>
+    <string name="txt_waiting_msg">로딩중</string>
+    <string name="txt_reload">다시 시도</string>
+    <string name="download_photo">사진이 저장되었습니다.</string>
+    <string name="dot"> ۰ </string>
+    <string name="txt_msg_you_must_update">최신 버전이 있습니다. 업데이트 후 사용 가능합니다.</string>
+    <string name="msg_success">성공적으로 적용되었습니다.</string>
+
+    <!-- 에러 메시지 정리 -->
+    <string name="err_msg_not_connect_internet">네트워크 연결이 원활하지 않습니다.\n 모바일 데이터 및 WIFI 연결상태를 확인해 주세요.</string>
+    <string name="err_msg_fail_to_use_service">서비스가 일시적으로 원활하지 않습니다. 잠시 후 다시 이용해 주세요.</string>
+
+    <!-- common -->
+    <string name="cmm_cancel">취소</string>
+    <string name="cmm_confirm">확인</string>
+    <string name="cmm_cert">인증</string>
+    <string name="cmm_yes">예</string>
+    <string name="cmm_no">아니오</string>
+    <string name="cmm_confirm_quit">종료하시겠습니까?</string>
+
+    <string name="file_downloading">파일이 다운로드됩니다.</string>
+    <string name="file_download_permission">파일 다운로드를 위해 권한이 필요합니다.</string>
+
+    <string name="new_update">새로운 업데이트가 있습니다.</string>
+
+    <string name="install">설치</string>
+    <string name="back">이전</string>
+    <string name="next">다음</string>
+    <string name="change">변경</string>
+    <string name="delete">삭제</string>
+    <string name="edit">편집</string>
+    <string name="submit">등록</string>
+
+</resources>

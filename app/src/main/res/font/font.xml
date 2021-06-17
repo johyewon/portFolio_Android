@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/nanumsquareroundb"
+        android:fontStyle="normal" />
+    <font
+        android:font="@font/applesdgothicneom"
+        android:fontStyle="normal" />
+    <font
+        android:font="@font/kopub_world_dotum_light"
+        android:fontStyle="normal"/>
+    <font
+        android:font="@font/kopub_world_dotum_medium"
+        android:fontStyle="normal"/>
+    <font
+        android:font="@font/notosanskrmedium"
+        android:fontStyle="normal"/>
+    <font
+        android:font="@font/notosanskrregular"
+        android:fontStyle="normal"/>
+
+</font-family>

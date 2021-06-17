@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "34215070436",
+    "project_id": "portfolio-e0978",
+    "storage_bucket": "portfolio-e0978.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34215070436:android:adeeea072b39ce255cbaf1",
+        "android_client_info": {
+          "package_name": "com.hanix.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34215070436-n5t8j7jqbit4dkmbh5sfh956h8ev31ur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hanix.portfolio",
+            "certificate_hash": "15bc1d7e23493d7dc56d00fc8ef734a6ba4941ba"
+          }
+        },
+        {
+          "client_id": "34215070436-2tevd8l473oeoeh231gnaqmhssik9545.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ZFI5u5hGggrYIalmBoizinNQ4SWXC-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34215070436-2tevd8l473oeoeh231gnaqmhssik9545.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

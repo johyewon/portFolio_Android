@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a2ceff</color>
+    <color name="colorPrimaryDark">#459dff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="mainColor">#ffffff</color>
+    <color name="mainColorText">#51a8e6</color>
+
+    <color name="textColorPrimary">#BDBDBD</color>
+    <color name="textColorSecondary">#d2d2d2</color>
+
+    <!-- colors -->
+    <color name="white">#000000</color>
+    <color name="black">#ffffff</color>
+    <color name="dark_white">#242424</color>
+    <color name="light_black">#d2d2d2</color>
+    <color name="light_gray">#5a5a5a</color>
+    <color name="dark_gray">#a0a0a0</color>
+
+    <color name="gray">#828282</color>
+    <color name="BD">#BDBDBD</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="background">#333333</color>
+    <color name="background_button">#454545</color>
+    <color name="light_red">#ffffff</color>
+    <color name="light_red_text">#eb7373</color>
+
+    <color name="dirty_white">#2C2B2B</color>
+
+    <color name="kakao">#F7E600</color>
+</resources>
