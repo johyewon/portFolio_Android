@@ -2,8 +2,10 @@ package com.hanix.portfolio.common.utils;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -19,6 +21,19 @@ public class ToastUtil {
 
     private static Toast mToast;
 
+    /**
+     * LENGTH_SHORT Toast
+     *
+     * @param context
+     * @param msg
+     */
+    public static void showToastS(final Context context, final String msg) {
+        new Handler(Looper.getMainLooper()).post(() -> {
+            hideToast();
+            mToast = Toast.makeText(context, msg, Toast.LENGTH_SHORT);
+            mToast.show();
+        });
+    }
 
     /**
      * LENGTH_LONG Toast
@@ -31,6 +46,7 @@ public class ToastUtil {
             hideToast();
             mToast = Toast.makeText(context, msg, Toast.LENGTH_LONG);
             mToast.show();
+
         });
     }
 
@@ -42,6 +58,23 @@ public class ToastUtil {
             GLog.i("Toast hide true!");
             mToast.cancel();
         }
+    }
+
+    /**
+     * @param context
+     * @param msg
+     * @param isHtml
+     */
+    public static void showToastPresent(final Context context, final String msg, final boolean isHtml) {
+        new Handler(Looper.getMainLooper()).post(() -> {
+            if (isHtml) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    Toast.makeText(context, Html.fromHtml(msg, Html.FROM_HTML_MODE_LEGACY), Toast.LENGTH_LONG).show();
+                }
+            } else {
+                Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     public static void setToastLayout(Activity activity, String msg, Context context) {

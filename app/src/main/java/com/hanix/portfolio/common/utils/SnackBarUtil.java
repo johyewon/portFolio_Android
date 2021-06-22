@@ -21,9 +21,22 @@ public class SnackBarUtil {
     public static void showSnackbar(final View view, final String msg, final int length) {
         new Handler(Looper.getMainLooper()).post(() -> {
             hideSnackbar();
-            mSnackbar = Snackbar.make(view, msg, length).setAction("Action", null);
+            mSnackbar = Snackbar.make(view, msg, length);
             mSnackbar.show();
         });
     }
 
+    public static void showSnackbarClick(final View view, final String msg, final int length, String clickMsg, View.OnClickListener clickListener) {
+        hideSnackbar();
+
+        new Handler(Looper.getMainLooper()).post(() -> {
+            hideSnackbar();
+            if (clickListener == null) {
+                mSnackbar = Snackbar.make(view, msg, length).setAction(clickMsg, (v) -> mSnackbar.dismiss());
+            } else {
+                mSnackbar = Snackbar.make(view, msg, length).setAction(clickMsg, clickListener);
+            }
+            mSnackbar.show();
+        });
+    }
 }

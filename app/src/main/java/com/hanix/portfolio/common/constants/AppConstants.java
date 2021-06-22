@@ -1,24 +1,22 @@
 package com.hanix.portfolio.common.constants;
 
 /**
- * 앱 전체의 상수 정의
+ * 앱 전체의 상수정의
  */
 public class AppConstants {
 
-    /**
-     * App Tag
-     **/
+    /** App Tag **/
     public static final String TAG = "HANIX";
 
-    /**
-     * 통신연결 Timeout 시간
-     **/
+    /** 통신연결 Timeout 시간 **/
     public static final int TIME_OUT = 15000; //15초
 
     //App store url
     public static final String STORE_URL_GOOGLE = "https://play.google.com/store/apps/details?id=";
 
-    // Topic 설정
-    public static final String commonTopic = "portFolio";
+    /**  앱 설치 후 첫 실행 구분 **/
+    public static final String isFirstRun = "isFirstRun";
 
+    // 앱 스키마
+    public static final String APP_SCHEME = "HANIX";
 }

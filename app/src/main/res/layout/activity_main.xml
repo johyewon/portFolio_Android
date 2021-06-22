@@ -42,8 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/home"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_home"
                 tools:ignore="ContentDescription,NestedWeights" />
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Home"
-                android:textColor="@color/mainColor"
+                android:textColor="@color/dark_gray"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,SmallSp" />
@@ -71,18 +71,18 @@
                 android:id="@+id/mainProject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                app:srcCompat="@drawable/layer"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_layer"
                 tools:ignore="ContentDescription" />
 
             <TextView
-                android:id="@+id/mainStreamText"
+                android:id="@+id/mainProjectText"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Project"
-                android:textColor="@color/mainColor"
+                android:textColor="@color/dark_gray"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,NestedWeights,SmallSp" />
@@ -100,8 +100,8 @@
                 android:id="@+id/mainContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                app:srcCompat="@drawable/send"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_contact"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -111,7 +111,36 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Contact"
-                android:textColor="@color/mainColor"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText,NestedWeights,SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/mainInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_info"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/mainInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Contact"
+                android:textColor="@color/dark_gray"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,NestedWeights,SmallSp" />

@@ -140,4 +140,9 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v13'
+    all*.exclude group: 'com.android.tools.build', module: 'gradle'
+}
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
