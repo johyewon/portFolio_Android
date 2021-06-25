@@ -100,22 +100,27 @@ public class MainActivity extends CommonActivity {
     private void init() {
         webView = findViewById(R.id.mainWebView);
         mainHome = findViewById(R.id.mainHome);
-        mainHomeText = findViewById(R.id.mainHomeText);
-        mainProject = findViewById(R.id.mainProject);
-        mainProjectText = findViewById(R.id.mainProjectText);
+        mainSkill = findViewById(R.id.mainSkill);
         mainContact = findViewById(R.id.mainContact);
+        mainNotion = findViewById(R.id.mainNotion);
+        mainBack = findViewById(R.id.mainBack);
+        mainHomeText = findViewById(R.id.mainHomeText);
+        mainSkillText = findViewById(R.id.mainSkillText);
         mainContactText = findViewById(R.id.mainContactText);
-        mainInfo = findViewById(R.id.mainInfo);
-        mainInfoText = findViewById(R.id.mainInfoText);
+        mainNotionText = findViewById(R.id.mainNotionText);
+        mainBackText = findViewById(R.id.mainBackText);
+
 
         mainHome.setOnClickListener(mainClick);
-        mainHomeText.setOnClickListener(mainClick);
-        mainProject.setOnClickListener(mainClick);
-        mainProjectText.setOnClickListener(mainClick);
+        mainSkill.setOnClickListener(mainClick);
         mainContact.setOnClickListener(mainClick);
+        mainNotion.setOnClickListener(mainClick);
+        mainBack.setOnClickListener(mainClick);
+        mainHomeText.setOnClickListener(mainClick);
+        mainSkillText.setOnClickListener(mainClick);
         mainContactText.setOnClickListener(mainClick);
-        mainInfo.setOnClickListener(mainClick);
-        mainInfoText.setOnClickListener(mainClick);
+        mainNotionText.setOnClickListener(mainClick);
+        mainBackText.setOnClickListener(mainClick);
     }
 
     @SuppressLint({"JavascriptInterface", "SetJavaScriptEnabled"})
@@ -211,16 +216,22 @@ public class MainActivity extends CommonActivity {
         public void onSingleClick(View v) {
             int id = v.getId();
             if (id == R.id.mainHome || id == R.id.mainHomeText) {
-                webView.loadUrl(URLApi.getServerURL());
-
-            } else if (id == R.id.mainProject || id == R.id.mainProjectText) {
-                webView.loadUrl(URLApi.getServerURL() + "/project");
+                if (webView != null)
+                    webView.loadUrl(URLApi.getServerURL());
+            } else if (id == R.id.mainSkill || id == R.id.mainSkillText) {
+                if (webView != null)
+                    webView.loadUrl(URLApi.getServerURL() + "/skills");
 
             } else if (id == R.id.mainContact || id == R.id.mainContactText) {
-                webView.loadUrl(URLApi.getServerURL() + "/contact");
+                // TODO : startActivity
 
-            } else if (id == R.id.mainInfo || id == R.id.mainInfoText) {
-                // TODO : 구현 예정
+            } else if (id == R.id.mainNotion || id == R.id.mainNotionText) {
+                if (webView != null)
+                    webView.loadUrl(URLApi.getNotionURL());
+
+            } else if (id == R.id.mainBack || id == R.id.mainBackText) {
+                if (webView != null && webView.canGoBack())
+                    webView.goBack();
 
             }
         }
@@ -283,29 +294,34 @@ public class MainActivity extends CommonActivity {
     public void resetBottomBtns() {
         if (webView == null) return;
 
+        mainBack.setImageResource(R.drawable.ic_back);
+        mainBackText.setTextColor(color(R.color.dark_gray));
         mainHome.setImageResource(R.drawable.ic_home);
         mainHomeText.setTextColor(color(R.color.dark_gray));
-        mainProject.setImageResource(R.drawable.ic_layer);
-        mainProjectText.setTextColor(color(R.color.dark_gray));
-        mainContact.setImageResource(R.drawable.ic_contact);
-        mainContactText.setTextColor(color(R.color.dark_gray));
+        mainSkill.setImageResource(R.drawable.ic_skill);
+        mainSkillText.setTextColor(color(R.color.dark_gray));
+        mainNotion.setImageResource(R.drawable.ic_notion);
+        mainNotionText.setTextColor(color(R.color.dark_gray));
 
 
         String url = webView.getUrl();
 
-        if(url.equals(URLApi.getServerURL()) || url.equals(URLApi.getServerURL() + "/")) {
+        if (webView != null && webView.canGoBack())
+            mainBack.setImageResource(R.drawable.ic_back_bold);
+
+        if (url.equals(URLApi.getServerURL()) || url.equals(URLApi.getServerURL() + "/")) {
             mainHome.setImageResource(R.drawable.ic_home_bold);
             mainHomeText.setTextColor(color(R.color.mainColor));
         }
 
-        if(url.contains(URLApi.getServerURL() + "/project")) {
-            mainProject.setImageResource(R.drawable.ic_layer_bold);
-            mainProjectText.setTextColor(color(R.color.mainColor));
+        if (url.contains(URLApi.getServerURL() + "/skills")) {
+            mainSkill.setImageResource(R.drawable.ic_skill_bold);
+            mainSkillText.setTextColor(color(R.color.mainColor));
         }
 
-        if(url.contains(URLApi.getServerURL() + "/contact")) {
-            mainContact.setImageResource(R.drawable.ic_contact_bold);
-            mainContactText.setTextColor(color(R.color.mainColor));
+        if (url.contains(URLApi.getNotionURL())) {
+            mainNotion.setImageResource(R.drawable.ic_notion_bold);
+            mainNotionText.setTextColor(color(R.color.mainColor));
         }
 
     }

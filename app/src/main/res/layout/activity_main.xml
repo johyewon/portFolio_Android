@@ -38,6 +38,35 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/mainBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:id="@+id/mainBackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#5a5a5a"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
                 android:id="@+id/mainHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,24 +97,55 @@
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:id="@+id/mainProject"
+                android:id="@+id/mainSkill"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="6dp"
-                app:srcCompat="@drawable/ic_layer"
+                app:srcCompat="@drawable/ic_skill"
                 tools:ignore="ContentDescription" />
 
             <TextView
-                android:id="@+id/mainProjectText"
+                android:id="@+id/mainSkillText"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Project"
+                android:text="Skills"
                 android:textColor="#5a5a5a"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,NestedWeights,SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <ImageView
+                android:id="@+id/mainNotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_notion"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/mainNotionText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Notion"
+                android:textColor="#5a5a5a"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText,NestedWeights,SmallSp" />
+
 
         </LinearLayout>
 
@@ -106,35 +166,6 @@
 
             <TextView
                 android:id="@+id/mainContactText"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Contact"
-                android:textColor="#5a5a5a"
-                android:textSize="14sp"
-                android:textStyle="normal"
-                tools:ignore="HardcodedText,NestedWeights,SmallSp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables">
-
-            <ImageView
-                android:id="@+id/mainInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="6dp"
-                app:srcCompat="@drawable/ic_info"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/mainInfoText"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"

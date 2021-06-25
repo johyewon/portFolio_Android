@@ -29,8 +29,8 @@ public class CommonActivity extends AppCompatActivity {
     public WebView webView;
     public WebSettings webSettings;
     public WebViewInterface webViewInterface;
-    public ImageView mainHome, mainProject, mainContact, mainInfo;
-    public TextView mainHomeText, mainProjectText, mainContactText, mainInfoText;
+    public ImageView mainHome, mainSkill, mainContact, mainNotion, mainBack;
+    public TextView mainHomeText, mainSkillText, mainContactText, mainNotionText, mainBackText;
     public static boolean mIsAppFinish = false;
     public static boolean isPageLoading = false;
 
@@ -92,7 +92,6 @@ public class CommonActivity extends AppCompatActivity {
             GLog.e(e.getMessage(), e);
         }
     }
-
 
 
     // 사용자 쪽 onCreateProc 처리
