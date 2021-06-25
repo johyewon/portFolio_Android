@@ -101,24 +101,20 @@ public class MainActivity extends CommonActivity {
         webView = findViewById(R.id.mainWebView);
         mainHome = findViewById(R.id.mainHome);
         mainSkill = findViewById(R.id.mainSkill);
-        mainContact = findViewById(R.id.mainContact);
         mainNotion = findViewById(R.id.mainNotion);
         mainBack = findViewById(R.id.mainBack);
         mainHomeText = findViewById(R.id.mainHomeText);
         mainSkillText = findViewById(R.id.mainSkillText);
-        mainContactText = findViewById(R.id.mainContactText);
         mainNotionText = findViewById(R.id.mainNotionText);
         mainBackText = findViewById(R.id.mainBackText);
 
 
         mainHome.setOnClickListener(mainClick);
         mainSkill.setOnClickListener(mainClick);
-        mainContact.setOnClickListener(mainClick);
         mainNotion.setOnClickListener(mainClick);
         mainBack.setOnClickListener(mainClick);
         mainHomeText.setOnClickListener(mainClick);
         mainSkillText.setOnClickListener(mainClick);
-        mainContactText.setOnClickListener(mainClick);
         mainNotionText.setOnClickListener(mainClick);
         mainBackText.setOnClickListener(mainClick);
     }

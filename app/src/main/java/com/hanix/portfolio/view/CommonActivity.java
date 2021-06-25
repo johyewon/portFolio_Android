@@ -29,8 +29,8 @@ public class CommonActivity extends AppCompatActivity {
     public WebView webView;
     public WebSettings webSettings;
     public WebViewInterface webViewInterface;
-    public ImageView mainHome, mainSkill, mainContact, mainNotion, mainBack;
-    public TextView mainHomeText, mainSkillText, mainContactText, mainNotionText, mainBackText;
+    public ImageView mainHome, mainSkill, mainNotion, mainBack;
+    public TextView mainHomeText, mainSkillText, mainNotionText, mainBackText;
     public static boolean mIsAppFinish = false;
     public static boolean isPageLoading = false;
 
