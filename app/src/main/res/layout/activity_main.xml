@@ -54,7 +54,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="#5a5a5a"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,SmallSp" />
 
@@ -83,7 +83,7 @@
                 android:gravity="center"
                 android:text="Home"
                 android:textColor="#5a5a5a"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,SmallSp" />
 
@@ -112,7 +112,7 @@
                 android:gravity="center"
                 android:text="Skills"
                 android:textColor="#5a5a5a"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,NestedWeights,SmallSp" />
 
@@ -142,7 +142,7 @@
                 android:gravity="center"
                 android:text="Notion"
                 android:textColor="#5a5a5a"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="normal"
                 tools:ignore="HardcodedText,NestedWeights,SmallSp" />
 

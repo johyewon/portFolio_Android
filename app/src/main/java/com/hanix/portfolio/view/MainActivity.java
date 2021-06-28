@@ -218,9 +218,6 @@ public class MainActivity extends CommonActivity {
                 if (webView != null)
                     webView.loadUrl(URLApi.getServerURL() + "/skills");
 
-            } else if (id == R.id.mainContact || id == R.id.mainContactText) {
-                // TODO : startActivity
-
             } else if (id == R.id.mainNotion || id == R.id.mainNotionText) {
                 if (webView != null)
                     webView.loadUrl(URLApi.getNotionURL());
